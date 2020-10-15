@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Sai Thakur</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="navparent">
+            <ul class='navcontainer'>
+                <li id='home' data-target="hometab">Home</li>
+                <li id='about' data-target="abouttab">About</li>
+                <li id='hobbies' data-target="hobbiestab">Hobbies</li>
+                <li id='contact' data-target="contacttab">Contact</li>
+            </ul>
+        </div>
+
+        <div class="pages active" id='hometab'>
+            This is home
+        </div>
+        <div class="pages" id='abouttab'>
+            This is about
+        </div>
+        <div class="pages" id='hobbiestab'>
+            <div class="hobby">
+                <form action="" class='search'>
+                    <input type="text" id='searchfield'>
+                    <label for="searchfield">Search</label>
+                </form>
+                <div class="list">
+                    <ul class="listclass">
+                        <li><span>Reading the Books</span><button>delete</button></li>
+                        <li><span>Snookers Playing</span><button>delete</button></li>
+                        <li><span>Trading stocks forex and crypto</span><button>delete</button></li>
+                        <li><span>Coding tech and doing some stuff online</span><button>delete</button></li>
+                    </ul>
+                </div>
+                <form action="" class='add'>
+                    <input type="text" id='add-field'>
+                    <button id='addbtn'>Add</button>
+                </form>
+            </div>
+
+        </div>
+        <div class="pages" id='contacttab'>
+            This is contact
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
